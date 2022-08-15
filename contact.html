@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EffectivePrinting || Contact</title>
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-5.12.1-web/css/all.min.css"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+      <link rel="icon" href="images/printing just logo.png"/>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="nav" id="nav">
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <img src="./images/logo.svg" class="nav-logo" alt="" />
+          <button class="nav-btn" id="nav-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- nav links -->
+        <ul class="nav-links">
+          <li><a href="index.html">home</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="products.html">products</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div>
+        <button id="close-btn" class="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="sidebar-links">
+          <li><a href="index.html">home</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="products.html">products</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+        <ul class="social-icons">
+          <!-- single item -->
+          <li>
+            <a href="tel:+1 2266984693" class="social-icon">
+            <i class="fa fa-phone-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:effectiveprinting108@gmail.com" class="social-icon">
+              <i class="material-icons">email</i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100084394687003" class="social-icon">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <!-- end of single item -->
+          <!-- single item -->
+          <li>
+            <a href="https://www.instagram.com/effectiveprinting/" class="social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+
+          <!-- end of single item -->
+          <!-- single item -->
+
+        </ul>
+      </div>
+    </aside>
+    <!-- end of sidebar -->
+
+    <!-- ############## -->
+    <!-- ############## -->
+    <!-- ############## -->
+    <!-- ############## -->
+
+    <section class="section single-page">
+      <!-- section title -->
+      <div class="section-title">
+        <h1>contact</h1>
+        <div class="underline"></div>
+      </div>
+      <!--end of section title -->
+      <div class="container">
+        <form action="https://mailto:effectiveprinting108@gmail.com" method="POST">
+          <div class="form-group">
+            <label for="firstname"> Name</label>
+            <input type="text" id="firstname" name="firstname" required>
+          </div>
+
+          <div class="form-group">
+          <label for="phonenumber"> Phone Number</label>
+            <input type="text" id="phonenumber" name="phonenumber"  required>
+          </div>
+
+          <div class="form-group">
+           <label for="email"> Email</label>
+            <input type="email" id="email" name="email"  required>
+          </div>
+
+          <div class="form-group">
+          <label for="message"> Message</label>
+            <textarea name="massage" id="message" cols="30" rows="10"  required></textarea>
+          </div>
+
+          <button type="submit"> Send an Enquiry</button>
+
+        </form>
+        </div>
+
+
+      <div class="section-center page-info">
+        <!-- contact page-->
+        <p style= font-size:1.3rem>
+          Let's Connect :
+        </p>
+        <p> Email: <a href="mailto:effectiveprinting108@gmail.com">effectiveprinting108@gmail.com</a>
+        </p>
+        <p>
+          Phone Number: <a href ="tel:+1 2266984693">+1 2266984693</a>
+        </p>
+        <p>
+         Address: <a style="color: var(--clr-primary-5)">264, Weber Street West, Kitchener, ON. N2H4A6</a>
+        </p>
+        <p>Effective Printing has all printing solution availble. Ask us for any queries.
+        we are here to assist you.
+        </p>
+      </div>
+    </section>
+    <!-- ############## -->
+    <!-- ############## -->
+    <!-- ############## -->
+    <!-- ############## -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <ul class="social-icons">
+        <!-- single item -->
+        <li>
+          <a href="tel:+1 2266984693" class="social-icon">
+          <i class="fa fa-phone-square"></i>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:effectiveprinting108@gmail.com" class="social-icon">
+            <i class="material-icons">email</i>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.facebook.com/profile.php?id=100084394687003" class="social-icon">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <!-- end of single item -->
+        <!-- single item -->
+        <li>
+          <a href="https://www.instagram.com/effectiveprinting/" class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+
+        <!-- end of single item -->
+        <!-- single item -->
+
+        <!-- end of single item -->
+      </ul>
+
+      <p>&copy; <span id="date"></span> EffectivePrinting. All rights reserved.</p>
+    </footer>
+    <script src="./js/app.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!--<script>
+        function sendEmail(){
+          Email.send({
+  Host : "smtp.gmail.com",
+  Username : "gujaratipruthavi600@gmail.com",
+  Password : "Pgujarati108@@",
+  To : 'effectiveprinting108@gmail.com',
+  From : document.getElementById("email").value,
+  Subject : "New Contact Form Enquiry",
+  Body : "Name:"+ document.getElementById("name").value
+        + "<br> Phone Number:" : + document.getElementById("phonenumber").value
+        + "<br> Email:"+ document.getElementById("email").value
+        + "<br> Message:" + document.getElementById("message").value
+}).then(
+message => alert("Message sent successfully")
+);
+        }
+    </script>-->
+  </body>
+</html>
